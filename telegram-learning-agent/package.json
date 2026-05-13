@@ -1,0 +1,29 @@
+{
+  "name": "telegram-learning-agent",
+  "version": "1.0.0",
+  "description": "Telegram bot for daily IELTS and language learning with OpenAI",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "telegram",
+    "openai",
+    "learning",
+    "ielts"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.5",
+    "luxon": "^3.5.0",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "openai": "^4.77.0"
+  }
+}
