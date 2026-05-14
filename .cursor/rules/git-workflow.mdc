@@ -1,0 +1,18 @@
+---
+description: After repo changes, commit, pull, and push to origin
+alwaysApply: true
+---
+
+# Git workflow
+
+When you finish a task that **changes tracked files** in this repository:
+
+1. **`git status`** — confirm what changed.
+2. **`git add`** — stage the relevant paths (not secrets like `.env`).
+3. **`git commit -m "..."`** — use a short, clear subject and optional body in full sentences.
+4. **`git pull --rebase`** — integrate remote updates before pushing.
+5. **`git push`** — publish the branch (usually `main`).
+
+If there is **nothing to commit**, still run **`git pull --rebase`** then **`git push`** when the user asks for this workflow, so the branch stays synced.
+
+Never commit `.env` or other local secrets; rely on `.gitignore` and fix accidental staging if needed.
